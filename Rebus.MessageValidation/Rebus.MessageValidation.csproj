@@ -47,10 +47,8 @@
     <None Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.5.1" />
     <PackageReference Include="Rebus" Version="4.2.*" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MessageValidation\" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="$(ProjectDir)..\scripts\patch_assemblyinfo.cmd $(ProjectDir)" />
